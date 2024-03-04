@@ -33,14 +33,14 @@ from anyio.streams.memory import MemoryObjectSendStream
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from llava.conversation import conv_templates
-from llava.mm_utils import (
+from yi_llava.conversation import conv_templates
+from yi_llava.mm_utils import (
     expand2square,
     get_model_name_from_path,
     load_pretrained_model,
     tokenizer_image_token,
 )
-from llava.model.constants import DEFAULT_IMAGE_TOKEN, IMAGE_TOKEN_INDEX, key_info
+from yi_llava.model.constants import DEFAULT_IMAGE_TOKEN, IMAGE_TOKEN_INDEX, key_info
 from loguru import logger
 from openai.types.chat import (
     ChatCompletion,

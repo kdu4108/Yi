@@ -6,14 +6,14 @@ from threading import Thread
 
 import gradio as gr
 import torch
-from llava.conversation import conv_templates, default_conversation
-from llava.mm_utils import (
+from yi_llava.conversation import conv_templates, default_conversation
+from yi_llava.mm_utils import (
     KeywordsStoppingCriteria,
     get_model_name_from_path,
     load_pretrained_model,
     tokenizer_image_token,
 )
-from llava.model.constants import DEFAULT_IMAGE_TOKEN, IMAGE_TOKEN_INDEX, key_info
+from yi_llava.model.constants import DEFAULT_IMAGE_TOKEN, IMAGE_TOKEN_INDEX, key_info
 from transformers import TextIteratorStreamer
 
 no_change_btn = gr.Button()

@@ -2,8 +2,8 @@ import base64
 from io import BytesIO
 
 import torch
-from llava.model import LlavaLlamaForCausalLM
-from llava.model.constants import IMAGE_TOKEN_INDEX
+from yi_llava.model import LlavaLlamaForCausalLM
+from yi_llava.model.constants import IMAGE_TOKEN_INDEX
 from PIL import Image
 from transformers import AutoTokenizer, StoppingCriteria
 
